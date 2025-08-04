@@ -1,0 +1,6 @@
+file = open("hello.txt" , "a+")
+file.write("Hi my name is Pratham ")
+file.seek(0)
+content = file.read()
+print (content)
+file.close()
