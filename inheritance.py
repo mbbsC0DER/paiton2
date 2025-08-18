@@ -36,3 +36,5 @@ d.child1()
 #hybrid
 c.base()
 c.pooki()
+print (animal.__bases__)
+print (animal.__module__)
