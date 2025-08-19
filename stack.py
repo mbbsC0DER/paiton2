@@ -1,14 +1,14 @@
 class stack():
-    def __init__(s , cap):
-        s.cap = cap 
-        s.top = -1
+    def __init__(s ):
+        # s.cap = cap 
+        # s.top = -1
         s.a = []
     
     def push(s,x):
-        if s.top == s.cap - 1 :
-            print ("Stack overflow !")
-            return False
-        s.top += 1 
+        # if s.top == s.cap - 1 :
+        #     print ("Stack overflow !")
+        #     return False
+        # s.top += 1 
         s.a.append(x)
         print ("Element pushed .")
     
@@ -20,8 +20,8 @@ class stack():
             print ("Stack is empty nothing to pop .")
             return False
         else:
-            popped = s.a.pop(s.top)
-            s.top -= 1
+            popped = s.a.pop()
+            # s.top -= 1
             print ("Element popped .")
             return popped
         
@@ -29,7 +29,7 @@ class stack():
         if s.is_empty() :
             print ("Stack is empty .")
             return False
-        return s.a[s.top]
+        # return s.a[]
     
     def display(s):
         if s.is_empty() < 0 :
@@ -37,12 +37,12 @@ class stack():
             return False
         print ("Current stack : " , s.a)
 
-t = stack(5)
+t = stack()
 t.push(10)
 t.push(20)
 t.display()
-t.pop()
-print (t.peek())
+print (t.pop())
+# print (t.peek())
 t.display()
 t.pop()
 t.display()
