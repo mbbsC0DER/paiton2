@@ -29,7 +29,7 @@ class stack():
         if s.is_empty() :
             print ("Stack is empty .")
             return False
-        # return s.a[]
+        return s.a[-1]
     
     def display(s):
         if s.is_empty() < 0 :
@@ -40,9 +40,10 @@ class stack():
 t = stack()
 t.push(10)
 t.push(20)
+t.push(30)
 t.display()
 print (t.pop())
-# print (t.peek())
+print (t.peek())
 t.display()
 t.pop()
 t.display()
