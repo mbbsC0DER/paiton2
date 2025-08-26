@@ -25,14 +25,24 @@ print (phonebook)
 
 # key = [1,2,3,4]
 # value = ['a' , 'b' , 'c' , 'd']
-key = ["name", "age", "gender"]
+key = ["name", "age", "gender" ]
 value = ["John", 25, "Male"]
 dict = {}
-for i in key :
-    dict[i] = None
-i = 1
-for j in value :
-    dict[i] = j
-    i += 1 
-
+for i in range(min(len(key) , len(value))) :
+    dict[key[i]] = value[i] 
+# for k , v in zip(key , value):
+#     dict[k] = v
 print (dict)
+
+"""Q4) Write a program to sort a dictionary by its values."""
+
+"""Q5) Given a dictionary of products and prices, write a program to display
+products costing more than ₹100."""
+dict = {"shampoo" : 75 , "dryer" : 110 , "books" : 200}
+for i in dict :
+    if dict[i] >  100 :
+        print (dict[i])
+    else :
+        pass
+
+
