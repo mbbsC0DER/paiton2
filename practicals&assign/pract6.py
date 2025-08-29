@@ -6,15 +6,15 @@ with open("file1.txt" , "r") as f1 :
    
 """2. Write a program to read a file and print only those lines that start with the letter A."""
 
-# import re
-# with open("file1.txt" , "+r") as f2 :
-#     content = f2.readlines()
-#     for i in content:
-#         # regex = r"^A"
-#         if re.match("A" , i):
-#             print (i)
-#         else :
-#             pass
+import re
+with open("file1.txt" , "+r") as f2 :
+    content = f2.readlines()
+    for i in content:
+        # regex = r"^A"
+        if re.match("A" , i):
+            print (i)
+        else :
+            pass
 
 
 """3. Write a program to count the number of lines, words, and characters in a text file."""
