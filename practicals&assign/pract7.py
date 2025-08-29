@@ -2,10 +2,10 @@
 factorial, and sine of a number entered by the user."""
 
 from math import * 
-# num = int (input ("ENter :"))
-# print ("The square root is : " , sqrt(num))
-# print ("The factorial is : " , factorial(num))
-# print ("The sine is : " , sin(num))
+num = int (input ("ENter :"))
+print ("The square root is : " , sqrt(num))
+print ("The factorial is : " , factorial(num))
+print ("The sine is : " , sin(num))
 
 
 """2. Use the random module to: Generate 5 random integers between 1 and 100."""
