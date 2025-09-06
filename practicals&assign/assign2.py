@@ -2,41 +2,41 @@
 • Find the transpose of the matrix.
 • Calculate the sum of each row and each column."""
 
-# matrix = [] 
-# for i in range(1,4):
-#     for j in range(1,4) :
-#         # print (i , j )
-#         matrix[i][j] = int(input(f"Enter no. for row {i} and coloumn {j} : "))
-#     pass
-# print (matrix)
-# for i in range(3):
-#     for j in range(3):
-#         print (matrix[i][j] , end = " ")
-#     print ()
+matrix = [] 
+for i in range(1,4):
+    for j in range(1,4) :
+        # print (i , j )
+        matrix[i][j] = int(input(f"Enter no. for row {i} and coloumn {j} : "))
+    pass
+print (matrix)
+for i in range(3):
+    for j in range(3):
+        print (matrix[i][j] , end = " ")
+    print ()
 
-# matrix = []
-# for i in range(3):
-#     row = []
-#     for j in range(3):
-#         row.append(int (input("enter number : ")))
-#     matrix.append(row)
-# print ("The matrix looks like " ,matrix)
-# tmatrix = []
-# for i in range(3) :
-#     col = []
-#     for j in range(3):
-#         col.append(matrix[j][i])
-#     tmatrix.append(col)
-# print ("The transpose of the matrix is : ",tmatrix)
-# for i in range(3):
-#     rsum = 0
-#     csum = 0
-#     row = []
-#     col = []
-#     for j in range(3):
-#         rsum += matrix[i][j]
-#         csum += matrix[j][i]
-#     print (f"Sum of row & column {i} is {rsum}\t{csum}")    
+matrix = []
+for i in range(3):
+    row = []
+    for j in range(3):
+        row.append(int (input("enter number : ")))
+    matrix.append(row)
+print ("The matrix looks like " ,matrix)
+tmatrix = []
+for i in range(3) :
+    col = []
+    for j in range(3):
+        col.append(matrix[j][i])
+    tmatrix.append(col)
+print ("The transpose of the matrix is : ",tmatrix)
+for i in range(3):
+    rsum = 0
+    csum = 0
+    row = []
+    col = []
+    for j in range(3):
+        rsum += matrix[i][j]
+        csum += matrix[j][i]
+    print (f"Sum of row & column {i} is {rsum}\t{csum}")    
 
 """Q2) You are given a list of tuples like: [("Ram", 24), ("Sham", 30), ("Amit", 20)]
 • Sort the list by age.
